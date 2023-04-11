@@ -4,7 +4,7 @@
 replicaCount: 1
 
 image:
-  repository: europe-west2-docker.pkg.dev/dipayan-trials/dipayan-tests/test-image-0.0.1
+  repository: europe-west2-docker.pkg.dev/dipayan-trials/dipayan-tests/hello-world-spring-boot-master-0.0.1
   tag: latest
   pullPolicy: Always
 
