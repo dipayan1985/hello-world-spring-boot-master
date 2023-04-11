@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: rest-api
+    app: hello-world-spring-boot-master
   name: {{.Values.application.name}}
 spec:
   replicas: {{.Values.replicaCount}}

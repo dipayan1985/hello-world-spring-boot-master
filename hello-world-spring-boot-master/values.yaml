@@ -4,7 +4,7 @@
 replicaCount: 1
 
 image:
-  repository: gcr.io/Dipayan_trials/dipayan-tests
+  repository: europe-west2-docker.pkg.dev/dipayan-trials/dipayan-tests
   tag: test-image-0.0.1
   pullPolicy: Always
 
