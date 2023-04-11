@@ -4,5 +4,7 @@ steps:
     args: [ 'package','-Dmaven.test.skip=true' ]
   - name: gcr.io/cloud-builders/docker
     args: [ 'build', '-t', 'europe-west2-docker.pkg.dev/dipayan-trials/dipayan-tests/test-image-0.0.1', '--build-arg=JAR_FILE=target/myproject-0.0.1-SNAPSHOT.jar', '.' ]
+  - images:
+    - 'europe-west2-docker.pkg.dev/dipayan-trials/dipayan-tests/test-image-0.0.1'
 options:
   logging: CLOUD_LOGGING_ONLY
