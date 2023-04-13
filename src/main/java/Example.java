@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 public class Example {
     @RequestMapping("/")
     String home() {
-        return "Hello World - v31-test!";
+        return "Hello World - v31-test-1!";
     }
 
     public static void main(String[] args) {
