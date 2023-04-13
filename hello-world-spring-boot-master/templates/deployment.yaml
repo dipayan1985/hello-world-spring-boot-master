@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   namespace: push-workflow
   labels:
     app: hello-world-spring-boot-master
