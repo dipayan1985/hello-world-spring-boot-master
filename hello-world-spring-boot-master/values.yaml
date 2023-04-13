@@ -10,3 +10,15 @@ image:
 
 application:
   name: hello-world-spring-boot-master
+
+keel:
+  # keel policy (all/major/minor/patch/force)
+  policy: all
+  # trigger type, defaults to events such as pubsub, webhooks
+  trigger: poll
+  # polling schedule
+  pollSchedule: "@every 1m"
+  # images to track and update
+  images:
+    - repository: europe-west2-docker.pkg.dev/dipayan-trials/dipayan-tests/hello-world-spring-boot-master-0.0.1 # it must be the same names as your app's values
+      tag: latest # it must be the same names as your app's values

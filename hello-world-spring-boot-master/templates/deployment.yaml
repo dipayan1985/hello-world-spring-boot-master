@@ -6,8 +6,6 @@ metadata:
   labels:
     app: hello-world-spring-boot-master
   name: {{.Values.application.name}}
-  annotations:
-    keel.sh/policy: force
 spec:
   replicas: {{.Values.replicaCount}}
   selector:
